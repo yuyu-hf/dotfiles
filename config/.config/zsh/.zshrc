@@ -2,7 +2,6 @@ bindkey -e # Enable emacs keybindings
 
 # zsh/fzf.zshで定義した関数を"Ctrl-r"で呼び出せるようにしています。
 # Emacsのkeybindingsでも"Ctrl-r"を利用しているので、"bindkey -e"の設定を上書きするように"bindkey -e"の後にzshの設定を反映させてください。
-source "${HOME}/.config/zsh/aliases.zsh"
 source "${HOME}/.config/zsh/common/init.zsh"
 source "${HOME}/.config/zsh/local/init.zsh"
 
