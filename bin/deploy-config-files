@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Ref: https://github.com/izumin5210/dotfiles/blob/ddaa1841b86ffca9eb0549373dd0be69f723845b/bin/deploy-config-files
+
+set -euo pipefail
+
+cd $(dirname $0)/..
+
+./bin/ln-s-x config/.bin "${HOME}/.bin"
+
+if [ ! -e "${HOME}/.config" ]; then
+    mkdir -p "${HOME}/.config"
+fi
+
+# --- git ---
+# Ref: https://www.k06.in/posts/where_is_git_config/
+# gitはXDG Base Directory Specificationに準拠しているため、$XDG_CONFIG_HOME/git/configに設定ファイルを配置すればgitconfigとして認識されます。
+./bin/ln-s-x config/.config/git "${HOME}/.config/git"
+
+./bin/ln-s-x config/.config/gh "${HOME}/.config/gh"
+
+# --- zsh ---
+# .zshenvでZDOTDIRを設定するので、.zshenvのみ$HOME以下に配置します。
+./bin/ln-s-x config/.config/zsh/.zshenv "${HOME}/.zshenv"
+./bin/ln-s-x config/.config/zsh "${HOME}/.config/zsh"
+
+# nvim
+./bin/ln-s-x config/.config/nvim "${HOME}/.config/nvim"
+
+# starship
+./bin/ln-s-x config/.config/starship "${HOME}/.config/starship"
+
+# fzf
+./bin/ln-s-x config/.config/fzf "${HOME}/.config/fzf"
+
+# tmux
+./bin/ln-s-x config/tmux/.tmux.conf "${HOME}/.tmux.conf"
+./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"

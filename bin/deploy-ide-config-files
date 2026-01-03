@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Ref: https://github.com/izumin5210/dotfiles/blob/ddaa1841b86ffca9eb0549373dd0be69f723845b/bin/deploy-config-files
+
+set -euo pipefail
+
+cd $(dirname $0)/..
+
+# VSCode
+VSCODE_APPLICATION_SUPPORT_DIR=
+if [ -n "${VSCODE_APPLICATION_SUPPORT_DIR}" ]; then
+  ./bin/ln-s-x config/IDE/VSCode/keybindings.json "${VSCODE_APPLICATION_SUPPORT_DIR}/User/keybindings.json"
+fi
+
+# Cursor
+CURSOR_APPLICATION_SUPPORT_DIR=
+if [ -n "${CURSOR_APPLICATION_SUPPORT_DIR}" ]; then
+  ./bin/ln-s-x config/IDE/Cursor/keybindings.json "${CURSOR_APPLICATION_SUPPORT_DIR}/User/keybindings.json"
+fi
