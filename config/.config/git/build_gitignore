@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+cd $(dirname $0)
+
+IGNORE_FILE='ignore'
+IGNORE_DIR='ignore.d'
+
+> "$IGNORE_FILE"
+
+for gitignore_file in "${IGNORE_DIR}"/*.gitignore; do
+    cat "${gitignore_file}" >> "${IGNORE_FILE}"
+    echo "" >> "${IGNORE_FILE}"
+done

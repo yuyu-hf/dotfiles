@@ -1,0 +1,3 @@
+# Ref: https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+
+.DS_Store
