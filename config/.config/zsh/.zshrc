@@ -1,3 +1,8 @@
+# Ref: https://zenn.dev/enchan1207/articles/7b9d7d397b7d0d
+if [ -r /etc/zshrc ]; then
+    source /etc/zshrc
+fi
+
 bindkey -e # Enable emacs keybindings
 
 # zsh/fzf.zshで定義した関数を"Ctrl-r"で呼び出せるようにしています。
