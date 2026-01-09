@@ -205,6 +205,7 @@ def generate_settings(deny_rules_for_os):
 
     settings = {
         "env": env,
+        "language": "Japanese",
         "permissions": {
             "defaultMode": "acceptEdits",
             "additionalDirectories": additional_directories,
