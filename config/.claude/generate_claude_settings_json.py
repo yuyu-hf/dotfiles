@@ -27,6 +27,10 @@ def generate_settings(deny_rules_for_os):
         "USE_BUILTIN_RIPGREP": "1"
     }
 
+    enabled_plugins = {
+        "code-simplifier@claude-plugins-official": True,
+    }
+
     additional_directories = [
         "~/src"
     ]
@@ -206,6 +210,7 @@ def generate_settings(deny_rules_for_os):
     settings = {
         "env": env,
         "language": "Japanese",
+        "enabledPlugins": enabled_plugins,
         "permissions": {
             "defaultMode": "acceptEdits",
             "additionalDirectories": additional_directories,
