@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# theme color
+thm_cyan=$(tmux show-option -gqv @thm_cyan)
+thm_black=$(tmux show-option -gqv @thm_black)
+thm_red=$(tmux show-option -gqv @thm_red)
+thm_white=$(tmux show-option -gqv @thm_white)
+
+# TODO: Linux対応
+
+battery=""
+if battery_info=$(/usr/bin/pmset -g ps | awk '{ if (NR == 2) print $2 " " $3 }' | sed -e "s/;//g" -e "s/%//") ; then
+battery_quantity=$(echo "${battery_info}" | awk '{print $2}')
+    if [[ ! "${battery_info}" =~ "discharging" ]]; then
+        battery="#[bg=${thm_cyan} fg=${thm_black}] ⚡ ${battery_quantity}% #[default]"
+    elif (( $battery_quantity < 16 )); then
+        battery="#[bg=${thm_red} fg=${thm_white}] ${battery_quantity}% #[default]"
+    else
+        battery="#[bg=${thm_cyan} fg=${thm_black}] ${battery_quantity}% #[default]"
+    fi
+fi
+
+echo "${battery}"

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# theme color
+thm_white=$(tmux show-option -gqv @thm_white)
+thm_blue_gray=$(tmux show-option -gqv @thm_blue_gray)
+
+current_path=$(tmux display-message -p '#{pane_current_path}')
+
+if git -C "${current_path}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    repo_name="$(basename "$(git -C "${current_path}" rev-parse --show-toplevel)")"
+    branch_name="$(git -C "${current_path}" branch --show-current)"
+    echo "#[fg=${thm_white} bg=${thm_blue_gray}]  ${repo_name}   ${branch_name} #[default]"
+fi

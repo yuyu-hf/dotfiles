@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Ref: https://zenn.dev/ngicks/articles/tmux-change-status-line-color
+
+# theme color
+thm_white="#bdc1ee"
+thm_black="#1a1b26"
+thm_gray="#414559"
+thm_blue_gray="#1a1b26"
+thm_blue="#5b62ab"
+thm_light_blue="#7aa2f7"
+thm_cyan="#99d1db"
+thm_green="#a6d189"
+thm_yellow="#e5c890"
+thm_orange="#ef9f76"
+thm_red="#e78284"
+thm_pink="#f4b8e4"
+thm_magenta="#ca9ee6"
+
+thm_fg="${thm_white}"
+thm_bg="${thm_gray}"
+
+# get_batteryやget_git_infoなどのスクリプトからもテーマカラーを参照できるようにする
+tmux set -g @thm_white "${thm_white}"
+tmux set -g @thm_black "${thm_black}"
+tmux set -g @thm_gray "${thm_gray}"
+tmux set -g @thm_blue_gray "${thm_blue_gray}"
+tmux set -g @thm_blue "${thm_blue}"
+tmux set -g @thm_light_blue "${thm_light_blue}"
+tmux set -g @thm_cyan "${thm_cyan}"
+tmux set -g @thm_green "${thm_green}"
+tmux set -g @thm_yellow "${thm_yellow}"
+tmux set -g @thm_orange "${thm_orange}"
+tmux set -g @thm_red "${thm_red}"
+tmux set -g @thm_pink "${thm_pink}"
+tmux set -g @thm_magenta "${thm_magenta}"
+
+tmux set -g @thm_fg "${thm_fg}"
+tmux set -g @thm_bg "${thm_bg}"
+
+# mode
+status_left_mode_view="#[fg=${thm_blue_gray}]#[fg=${thm_white} bg=${thm_blue_gray}] VIEW #[default]#[fg=${thm_blue_gray}] #[default]"
+status_left_mode_copy="#[fg=${thm_green}]#[fg=${thm_black} bg=${thm_green}] COPY #[default]#[fg=${thm_green}] #[default]"
+
+# prefix key
+status_left_prefix="#{?client_prefix,#[fg=${thm_green}]#[fg=${thm_black} bg=${thm_green}] Prefix: ON #[default]#[fg=${thm_green}] ,#[fg=${thm_blue_gray}]#[fg=${thm_white} bg=${thm_blue_gray}] Prefix: OFF #[default]#[fg=${thm_blue_gray}] }#[default]"
+
+# session
+status_left_session="#[fg=${thm_white} bg=${thm_blue_gray}] Session: #S #[default]"
+
+# window
+status_left_window="#[fg=${thm_white} bg=${thm_blue_gray}] Window: #W #[default]"
+
+# pane
+status_left_pane="#[fg=${thm_white} bg=${thm_blue_gray}] Pane: #P #[default]"
+
+status_left_without_mode=${status_left_prefix}"#[fg=${thm_blue_gray}]"${status_left_session}"#[fg=${thm_white} bg=${thm_blue_gray}]"${status_left_window}"#[fg=${thm_white} bg=${thm_blue_gray}]"${status_left_pane}"#[fg=${thm_white} bg=${thm_blue_gray}]#(~/.config/tmux/get_git_info)#[fg=${thm_blue_gray} bg=${thm_gray}]#[default]"
+
+status_left="if -F \"#{==:copy-mode,#{pane_mode}}\"\
+  \"set-option -p status-left \\\"${status_left_mode_copy}${status_left_prefix}#[fg=${thm_blue_gray}]${status_left_session}#[fg=${thm_white} bg=${thm_blue_gray}]${status_left_window}#[fg=${thm_white} bg=${thm_blue_gray}]${status_left_pane}#[fg=${thm_white} bg=${thm_blue_gray}]#(~/.config/tmux/get_git_info)#[fg=${thm_blue_gray} bg=${thm_gray}]#[default]\\\"\"\
+  \"set-option -p status-left \\\"${status_left_mode_view}${status_left_prefix}#[fg=${thm_blue_gray}]${status_left_session}#[fg=${thm_white} bg=${thm_blue_gray}]${status_left_window}#[fg=${thm_white} bg=${thm_blue_gray}]${status_left_pane}#[fg=${thm_white} bg=${thm_blue_gray}]#(~/.config/tmux/get_git_info)#[fg=${thm_blue_gray} bg=${thm_gray}]#[default]\\\"\"\
+"
+
+status_right="#[fg=${thm_blue_gray}]#[fg=${thm_white} bg=${thm_blue_gray}] #H #[default]#[fg=${thm_blue_gray}] #[fg=${thm_white}]|#[default]#(~/.config/tmux/get_baterry)#[fg=${thm_white}]|#[default]#[fg=${thm_cyan}] %H:%M %m/%d %a#[default]"
+
+
+tmux set -g status-position top
+tmux set -g focus-events on
+
+# デフォルトのwindow-statusで表示される情報を消す
+tmux set-option -g window-status-format ""
+tmux set-option -g window-status-current-format ""
+
+tmux set-option -g status-fg "${thm_fg}"
+tmux set-option -g status-bg "${thm_bg}"
+
+tmux set-option -g status-left-length 100
+tmux set-option -g status-left "${status_left_mode_view}${status_left_without_mode}"
+tmux set-hook -g after-select-pane "${status_left}"
+tmux set-hook -g client-session-changed "${status_left}"
+tmux set-hook -g pane-focus-in "${status_left}"
+tmux set-hook -g pane-mode-changed "${status_left}"
+
+tmux set-option -g status-right-length 100
+tmux set-option -g status-right "${status_right}"
