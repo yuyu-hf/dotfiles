@@ -36,7 +36,7 @@ def generate_settings(deny_rules_for_os):
     ]
 
     allow_rules = [
-        ("domain:*", ["WebFetch", "WebSearch"]),
+        ("domain:*", ["WebFetch"]),
 
         ("awk:*", ["Bash"]),
         ("cat:*", ["Bash"]),
@@ -191,7 +191,7 @@ def generate_settings(deny_rules_for_os):
     ]
 
     def convert_rules_to_formatted_list(rules):
-        tool_order = ["WebFetch", "WebSearch", "Bash", "Read", "Edit", "Write"]
+        tool_order = ["WebFetch", "Bash", "Read", "Edit", "Write"]
 
         grouped_by_tool = {tool: [] for tool in tool_order}
 
