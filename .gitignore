@@ -1,0 +1,8 @@
+# karabiner
+config/.config/karabiner/*
+!config/.config/karabiner/karabiner.json
+
+# Cluade
+config/.claude/*
+!config/.claude/generate_claude_settings_json.py
+!config/.claude/CLAUDE.md
