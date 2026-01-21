@@ -18,34 +18,53 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-    pkgs.jq
-    pkgs.fzf
-    pkgs.ghq
-    pkgs.yazi
-    pkgs.bat
-    pkgs.lua-language-server
-    pkgs.tree-sitter
-    pkgs.starship
-    pkgs.stylua
-    pkgs.zoxide
-    pkgs.tmux
-    # zsh-completionsの_tmuxinatorと競合するためコメントアウト
-    # pkgs.tmuxinator
-    pkgs.wget
+    # zsh
     # zsh-completionsが~/.nix-profile/share以下になぜか配置されないのでhomebrewで管理します。
     # pkgs.zsh-completions
     # pkgs.zsh-autosuggestions
-    pkgs.neovim
-    pkgs.ripgrep
-    pkgs.gh
+    pkgs.fzf
+    pkgs.yazi
+    pkgs.bat
+    pkgs.zoxide
     pkgs.eza
     pkgs.fd
+    pkgs.ripgrep
+    pkgs.pcre2 # ripgrep
+
+    # starship
+    pkgs.starship
+
+    # tmux
+    pkgs.tmux
+    # zsh-completionsの_tmuxinatorと競合するためコメントアウト
+    # pkgs.tmuxinator
+
+    # nvim
+    pkgs.neovim
+    pkgs.tree-sitter
+
+    # Source Code
+    pkgs.git
+    pkgs.gh
+    pkgs.ghq
+ 
+    # lua
+    pkgs.lua-language-server
+    pkgs.stylua
 
     # DB/Cache
     pkgs.postgresql_16
     pkgs.mysql80
     pkgs.redis
     pkgs.duckdb
+
+    # network
+    pkgs.openssl
+    pkgs.cacert
+
+    # others
+    pkgs.jq
+    pkgs.wget
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
