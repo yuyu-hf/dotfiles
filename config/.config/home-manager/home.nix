@@ -22,7 +22,6 @@
     pkgs.fzf
     pkgs.ghq
     pkgs.yazi
-    pkgs.mysql80
     pkgs.bat
     pkgs.lua-language-server
     pkgs.tree-sitter
@@ -41,6 +40,12 @@
     pkgs.gh
     pkgs.eza
     pkgs.fd
+
+    # DB/Cache
+    pkgs.postgresql_16
+    pkgs.mysql80
+    pkgs.redis
+    pkgs.duckdb
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
