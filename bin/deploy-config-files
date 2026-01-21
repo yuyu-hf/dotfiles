@@ -33,6 +33,13 @@ fi
 # fzf
 ./bin/ln-s-x config/.config/fzf "${HOME}/.config/fzf"
 
+# karabinar
+./bin/ln-s-x config/.config/karabiner "${HOME}/.config/karabiner"
+
 # tmux
 ./bin/ln-s-x config/tmux/.tmux.conf "${HOME}/.tmux.conf"
 ./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
+./bin/ln-s-x config/tmux "${HOME}/.config/tmux"
+
+# cluade
+./bin/ln-s-x config/.claude "${HOME}/.claude"
