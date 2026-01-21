@@ -91,3 +91,6 @@ http-client.private.env.json
 .DS_Store
 
 **/.claude/settings.local.json
+
+# Zsh completion cache
+zcompdump.*
