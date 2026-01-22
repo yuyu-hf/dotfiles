@@ -56,11 +56,9 @@ require("lazy").setup({
 
 -- config ディレクトリ以下の全ての lua ファイルを自動的に読み込む
 local config_path = vim.fn.stdpath("config") .. "/lua/config"
-local config_files = vim.fn.readdir(config_path, function(name)
-	return name:match("%.lua$")
-end)
-
-for _, file in ipairs(config_files) do
-	local module = file:gsub("%.lua$", "")
-	require("config." .. module)
+for name, type in vim.fs.dir(config_path) do
+	if type == "file" and name:match("%.lua$") then
+		local module = name:gsub("%.lua$", "")
+		require("config." .. module)
+	end
 end

@@ -11,6 +11,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
 		local buf = args.buf
 
+		-- シンボルベースのwinbarを有効化
+		require("config.symbol_winbar").attach(buf)
+
 		-- デフォルトで設定されている言語サーバー用キーバインドに設定を追加する
 		-- See https://neovim.io/doc/user/lsp.html#lsp-defaults
 		-- 言語サーバーのクライアントがLSPで定められた機能を実装していたら設定を追加するという流れ

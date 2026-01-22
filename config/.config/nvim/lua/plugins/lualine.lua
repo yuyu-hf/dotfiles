@@ -3,6 +3,16 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
+		local symbol_winbar = require("config.symbol_winbar")
+
+		-- winbar用のシンボルコンポーネント(現在のカーソル位置のコンテキストを表示)
+		local symbol_component = {
+			function()
+				return " > " .. symbol_winbar.component_text()
+			end,
+			cond = symbol_winbar.has_symbols,
+			padding = { left = 0, right = 0 },
+		}
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
@@ -54,7 +64,9 @@ return {
 							unnamed = "[No Name]",
 							newfile = "[New]",
 						},
+						padding = { left = 0, right = 0 },
 					},
+					symbol_component,
 				},
 				lualine_x = {},
 				lualine_y = {},
@@ -75,7 +87,9 @@ return {
 							unnamed = "[No Name]",
 							newfile = "[New]",
 						},
+						padding = { left = 0, right = 0 },
 					},
+					symbol_component,
 				},
 				lualine_x = {},
 				lualine_y = {},
