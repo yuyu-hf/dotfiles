@@ -15,6 +15,12 @@
   # release notes.
   home.stateVersion = "25.11"; # Please read the comment before changing.
 
+  # Allow unfree packages
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [
+    "claude-code"
+    "1password-cli"
+  ];
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
@@ -61,6 +67,24 @@
     # network
     pkgs.openssl
     pkgs.cacert
+
+    # Container
+    pkgs.docker
+
+    # Cloud Service
+    pkgs.awscli2
+    pkgs.azure-cli
+    pkgs.google-cloud-sdk
+
+    # AI
+    pkgs.codex
+    pkgs.claude-code
+
+    # Secret
+    pkgs._1password-cli
+
+    # Programming Language
+    pkgs.mise
 
     # others
     pkgs.jq
