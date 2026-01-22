@@ -39,8 +39,48 @@ return {
 				lualine_z = {},
 			},
 			tabline = {},
-			winbar = {},
-			inactive_winbar = {},
+			winbar = {
+				lualine_a = {},
+				lualine_b = {},
+				lualine_c = {
+					{
+						"filename",
+						file_status = true,
+						newfile_status = true,
+						path = 0, -- 0: ファイル名のみ, 1: 相対パス, 2: 絶対パス, 3: 親ディレクトリ+ファイル名
+						symbols = {
+							modified = "[+]",
+							readonly = "[-]",
+							unnamed = "[No Name]",
+							newfile = "[New]",
+						},
+					},
+				},
+				lualine_x = {},
+				lualine_y = {},
+				lualine_z = {},
+			},
+			inactive_winbar = {
+				lualine_a = {},
+				lualine_b = {},
+				lualine_c = {
+					{
+						"filename",
+						file_status = true,
+						newfile_status = true,
+						path = 0,
+						symbols = {
+							modified = "[+]",
+							readonly = "[-]",
+							unnamed = "[No Name]",
+							newfile = "[New]",
+						},
+					},
+				},
+				lualine_x = {},
+				lualine_y = {},
+				lualine_z = {},
+			},
 			extensions = {},
 		})
 	end,
