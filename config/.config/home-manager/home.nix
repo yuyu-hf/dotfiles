@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -16,7 +16,7 @@
   home.stateVersion = "25.11"; # Please read the comment before changing.
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (pkgs.lib.getName pkg) [
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "claude-code"
     "1password-cli"
   ];
