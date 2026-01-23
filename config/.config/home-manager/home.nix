@@ -55,9 +55,6 @@
     # Secret
     pkgs._1password-cli
 
-    # Programming Language
-    pkgs.mise
-
     # aqua
     (pkgs.callPackage ./pkgs/aqua.nix { })
 
