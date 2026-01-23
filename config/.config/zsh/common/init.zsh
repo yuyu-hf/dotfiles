@@ -1,6 +1,6 @@
-source "${HOME}/.config/zsh/common/nix.zsh"
-source "${HOME}/.config/zsh/common/aqua.zsh"
+source "${HOME}/.config/zsh/common/exports.zsh"
 source "${HOME}/.config/zsh/common/aliases.zsh"
+source "${HOME}/.config/zsh/common/aqua.zsh"
 source "${HOME}/.config/zsh/common/starship.zsh"
 source "${HOME}/.config/zsh/common/zoxide.zsh"
 source "${HOME}/.config/zsh/common/fzf.zsh"
