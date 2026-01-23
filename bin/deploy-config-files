@@ -45,6 +45,9 @@ fi
 # karabinar
 ./bin/ln-s-x config/.config/karabiner "${HOME}/.config/karabiner"
 
+# Aerospace
+./bin/ln-s-x config/.config/aerospace "${HOME}/.config/aerospace"
+
 # tmux
 ./bin/ln-s-x config/tmux/.tmux.conf "${HOME}/.tmux.conf"
 ./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
