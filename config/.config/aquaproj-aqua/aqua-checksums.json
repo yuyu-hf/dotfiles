@@ -106,11 +106,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v1.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz",
-      "checksum": "3D1EC4AF7F3D351629F500B432E6C735CAF3216AB3EAA76DBE8FFBC8F3006F5A",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/astral-sh/uv/0.9.21/uv-aarch64-apple-darwin.tar.gz",
       "checksum": "473977236EF8AC5937C80DE08A3599CB6ED6021D0E015E10F88076767877A153",
       "algorithm": "sha256"
