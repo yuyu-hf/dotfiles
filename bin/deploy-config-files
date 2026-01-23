@@ -27,6 +27,9 @@ fi
 # nix
 ./bin/ln-s-x config/.config/nix "${HOME}/.config/nix"
 
+# aqua
+./bin/ln-s-x config/.config/aquaproj-aqua "${HOME}/.config/aquaproj-aqua"
+
 # home-manager
 ./bin/ln-s-x config/.config/home-manager "${HOME}/.config/home-manager"
 

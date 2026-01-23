@@ -17,7 +17,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "claude-code"
     "1password-cli"
   ];
 
@@ -28,41 +27,19 @@
     # zsh-completionsが~/.nix-profile/share以下になぜか配置されないのでhomebrewで管理します。
     # pkgs.zsh-completions
     # pkgs.zsh-autosuggestions
-    pkgs.fzf
-    pkgs.yazi
-    pkgs.bat
-    pkgs.zoxide
-    pkgs.eza
-    pkgs.fd
-    pkgs.ripgrep
     pkgs.pcre2 # ripgrep
-
-    # starship
-    pkgs.starship
 
     # tmux
     pkgs.tmux
-    # zsh-completionsの_tmuxinatorと競合するためコメントアウト
-    # pkgs.tmuxinator
-
-    # nvim
-    pkgs.neovim
-    pkgs.tree-sitter
+    pkgs.tmuxinator
 
     # Source Code
     pkgs.git
-    pkgs.gh
-    pkgs.ghq
  
-    # lua
-    pkgs.lua-language-server
-    pkgs.stylua
-
     # DB/Cache
     pkgs.postgresql_16
     pkgs.mysql80
     pkgs.redis
-    pkgs.duckdb
 
     # network
     pkgs.openssl
@@ -72,13 +49,8 @@
     pkgs.docker
 
     # Cloud Service
-    pkgs.awscli2
     pkgs.azure-cli
     pkgs.google-cloud-sdk
-
-    # AI
-    pkgs.codex
-    pkgs.claude-code
 
     # Secret
     pkgs._1password-cli
@@ -86,8 +58,10 @@
     # Programming Language
     pkgs.mise
 
+    # aqua
+    (pkgs.callPackage ./pkgs/aqua.nix { })
+
     # others
-    pkgs.jq
     pkgs.wget
 
     # # Adds the 'hello' command to your environment. It prints a friendly

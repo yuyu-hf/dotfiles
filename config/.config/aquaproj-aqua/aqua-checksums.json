@@ -1,0 +1,44 @@
+{
+  "checksums": [
+    {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v1.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz",
+      "checksum": "3D1EC4AF7F3D351629F500B432E6C735CAF3216AB3EAA76DBE8FFBC8F3006F5A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/uv/0.9.21/uv-aarch64-apple-darwin.tar.gz",
+      "checksum": "473977236EF8AC5937C80DE08A3599CB6ED6021D0E015E10F88076767877A153",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/duckdb/duckdb/v1.4.3/duckdb_cli-osx-universal.zip",
+      "checksum": "F44E488B1C67D007B6B12AF9F1AD9122FAD0F63A606CAF2BFB10CA945042A3F6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.67.0/fzf-0.67.0-darwin_arm64.tar.gz",
+      "checksum": "B7F34C964D8E52C471C933CEF8EC43DC71997C266CAFAFD1B013BED10FC229A1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/neovim/neovim/v0.11.5/nvim-macos-arm64.tar.gz",
+      "checksum": "79143D3B408F7034F90B7CF59AF2276DE09EF8A4C2F1A28E4C99581B249D3107",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/starship/starship/v1.24.2/starship-aarch64-apple-darwin.tar.gz",
+      "checksum": "D3A0DA21374962625A2EE992110979BC1FA33424D7B6AEA58A70405E26544FD9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_darwin_arm64.zip",
+      "checksum": "6FD6333348FDAF78DFBBE36CEC168F3E656A63C8",
+      "algorithm": "sha1"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.462.0/registry.yaml",
+      "checksum": "2AFA03BCE0987832DE93266E53C03E41B4B5D00EF3455B3537015E52642D7F704A31C9DEB27139C0A9B501AC55C8D4A2572506020B887C2DFBCEDF3723300F00",
+      "algorithm": "sha512"
+    }
+  ]
+}
