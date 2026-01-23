@@ -371,6 +371,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/k1LoW/git-wt/v0.15.0/git-wt_v0.15.0_darwin_amd64.zip",
+      "checksum": "2C8E1E7FF6F9CA44B550F743BD2246CFCD4B6236D9DC089C22E37D1874CCB35B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/k1LoW/git-wt/v0.15.0/git-wt_v0.15.0_darwin_arm64.zip",
+      "checksum": "A6C07C6338BCB31A8D71DEC9FB961D01716E1FF7F54A6DC5846551335AB9E571",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/k1LoW/git-wt/v0.15.0/git-wt_v0.15.0_linux_amd64.tar.gz",
+      "checksum": "C13442FEF2BA65E43B57374311709CCD50EE20C9C15B5F76FC02C406AE553F88",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/k1LoW/git-wt/v0.15.0/git-wt_v0.15.0_linux_arm64.tar.gz",
+      "checksum": "269E6FF231C84AD139B1350A8838DD6BF32D5262B48C04B6751E5C306597E2BA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/k1LoW/git-wt/v0.15.0/git-wt_v0.15.0_windows_amd64.tar.gz",
+      "checksum": "77F3D5F31C1D3BD3BB017360F64E249A8E770BC9874AF827449DE3CA8C01D638",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/v0.11.5/nvim-linux-arm64.tar.gz",
       "checksum": "EA4F9A31B11CC1477FF014AEBB7B207684E7280F94FFA97ABDAB6CACD9B98519",
       "algorithm": "sha256"
