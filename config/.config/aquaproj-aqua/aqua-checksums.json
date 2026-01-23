@@ -736,6 +736,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "http/nodejs.org/dist/v25.4.0/node-v25.4.0-darwin-arm64.tar.gz",
+      "checksum": "BFA7AF56C0F24074D7A6C5B08D837B8BE211F44DB5FCC93DCB2CB96153E49B65",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/nodejs.org/dist/v25.4.0/node-v25.4.0-darwin-x64.tar.gz",
+      "checksum": "1C75D67C9416C61A948C7CD5662B4293DAA0E5A9DDAC664F17921CCD5D41A016",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/nodejs.org/dist/v25.4.0/node-v25.4.0-linux-arm64.tar.gz",
+      "checksum": "B059F504162053F4A5D71E85F3D1D89032A7C14EB1A7223C76EF2FF9CE34612C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/nodejs.org/dist/v25.4.0/node-v25.4.0-linux-x64.tar.gz",
+      "checksum": "5951A889AB65B3A73CC88E6D412D70499F523A89FE553B5349471AF7586F2BE2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/nodejs.org/dist/v25.4.0/node-v25.4.0-win-x64.zip",
+      "checksum": "5A5FCD17BC7567645C85B016CD428E4CD9E54796994651BE3F3709768714E002",
+      "algorithm": "sha256"
+    },
+    {
       "id": "http/static.rust-lang.org/rustup/archive/1.28.2/aarch64-apple-darwin/rustup-init",
       "checksum": "20EF5516C31B1AC2290084199BA77DBBCAA1406C45C1D978CA68558EF5964EF5",
       "algorithm": "sha256"
