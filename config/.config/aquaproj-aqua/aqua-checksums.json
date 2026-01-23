@@ -166,6 +166,56 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-aarch64-apple-darwin.tar.gz",
+      "checksum": "6BA38DCE9F91EE1B9A24AA4AEDE1DB7195258FE176C3F8276AE2D4457D8170A0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "ADF7674086DAA4582F598F74CE9CAA6B70C1BA8F4A57D2911499B37826B014F9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "E9B5C4A9E73D2119C687E074F0D97F188E30E5FE8AE0E6D455755F74BB5CC0CF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-x86_64-pc-windows-msvc.zip",
+      "checksum": "6EA59864091B4CFCA89D9EE38388FF1A3CCDC8244B6E1CDD5201259DE89B0B06",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "B7EA845004762358A00EF9127DD9FD723E333C7E4B9CB1DA220C3909372310EE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.6.4/deno-aarch64-apple-darwin.zip",
+      "checksum": "0273E3472A4987A1AEACBDA8153D023DBAB9151296E15977977EF6BDBBCA485B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.6.4/deno-aarch64-unknown-linux-gnu.zip",
+      "checksum": "DAFB54C5454D7FCCA81305215442E832E0C34E90B76A2E9A31D0676CBB06BFC6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.6.4/deno-x86_64-apple-darwin.zip",
+      "checksum": "14B783336505B06CDA198EBA0F23FF11CEBED5EAADB1907FAC31DED6E09C1CDB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.6.4/deno-x86_64-pc-windows-msvc.zip",
+      "checksum": "0774AE74018EF970AC7364ECEC5EF1689B2D67C177BE8A541540EF106149D1D9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.6.4/deno-x86_64-unknown-linux-gnu.zip",
+      "checksum": "9100BBD0450C17B82002D3948BB8E7E1953C9E6506E63B586E2DAA4042ECA7F6",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/duckdb/duckdb/v1.4.3/duckdb_cli-linux-amd64.zip",
       "checksum": "7A9E36141A71A353F54DFBEED607A5218C3425CE2D417610DA08443259A12F7C",
       "algorithm": "sha256"
@@ -203,6 +253,66 @@
     {
       "id": "github_release/github.com/eza-community/eza/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz",
       "checksum": "D231BB3EE33B08C76279B5888845DCEB7034D055C42BB9BE46DBE0DAE39394DF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/golangci/golangci-lint/v1.64.8/golangci-lint-1.64.8-darwin-amd64.tar.gz",
+      "checksum": "B52AEBB8CB51E00BFD5976099083FBE2C43EF556CEF9C87E58A8AE656E740444",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/golangci/golangci-lint/v1.64.8/golangci-lint-1.64.8-darwin-arm64.tar.gz",
+      "checksum": "70543D21E5B02A94079BE8AA11267A5B060865583E337FE768D39B5D3E2FAF1F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/golangci/golangci-lint/v1.64.8/golangci-lint-1.64.8-linux-amd64.tar.gz",
+      "checksum": "B6270687AFB143D019F387C791CD2A6F1CB383BE9B3124D241CA11BD3CE2E54E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/golangci/golangci-lint/v1.64.8/golangci-lint-1.64.8-linux-arm64.tar.gz",
+      "checksum": "A6AB58EBCB1C48572622146CDAEC2956F56871038A54ED1149F1386E287789A5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/golangci/golangci-lint/v1.64.8/golangci-lint-1.64.8-windows-amd64.zip",
+      "checksum": "54C2ED3A6B4F2F5DA1056FB6E83D6B73B592E06684B65A5999174FABBB251A8F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/golangci/golangci-lint/v1.64.8/golangci-lint-1.64.8-windows-arm64.zip",
+      "checksum": "24294BC46BC887691C7A43C66448F1DF9203C0A9C15BCB114B6147AA97973505",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.1/lazygit_0.58.1_darwin_arm64.tar.gz",
+      "checksum": "D93A8A217A51F26D0A643A97BD31E3FABCB2E3A78CDBF1F1E533B9CD8BC881CE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.1/lazygit_0.58.1_darwin_x86_64.tar.gz",
+      "checksum": "9F824298C8DBB3EFAF6BF93A2E3BE8A31FD53213BD3E759B7BD49D7BC7F8E3D0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.1/lazygit_0.58.1_linux_arm64.tar.gz",
+      "checksum": "C0571542A3DF894748AFC8820FCD2AC16DF0970DF2DDB429280DFEF47B1F2D1E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.1/lazygit_0.58.1_linux_x86_64.tar.gz",
+      "checksum": "61B6B839390C193466FB692F75DF4E75EF5E9CED2BF5E0CA8B3848902F0ADEA9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.1/lazygit_0.58.1_windows_arm64.zip",
+      "checksum": "256BB4840185A2E693CD3058BB79F782144FC227998753F5489D9B99C56DCC3D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.1/lazygit_0.58.1_windows_x86_64.zip",
+      "checksum": "81F6F925E7EB97B32F89DD9C3597FED245F26FE81C7162A2470D501051F996DD",
       "algorithm": "sha256"
     },
     {
@@ -308,6 +418,86 @@
     {
       "id": "github_release/github.com/openai/codex/rust-v0.89.0/codex-x86_64-unknown-linux-musl.zst",
       "checksum": "01F23601973797B52371AD38297A3BD876500E34769CC9B41C494B5E7D9FC6CB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.3.6/bun-darwin-aarch64.zip",
+      "checksum": "2AF1EC8437759AB05B3B0EA421FE9E22E6C705CB4CB0751C326982642DACE8FA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.3.6/bun-darwin-x64.zip",
+      "checksum": "83EF84C2A9D25DFEF6BA0B31BE3D8A09952EF311C71FECA4488A628E96C26706",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.3.6/bun-linux-aarch64.zip",
+      "checksum": "5AFD12B366BA2D8297245CC29C039416334DD872152C1DB02E5C8AA8C66E96B1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.3.6/bun-linux-x64.zip",
+      "checksum": "9BA98D2134550D6690875B23A4F5C48E74B7CB267E8CC1B8F52605921C6C11EF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/oven-sh/bun/bun-v1.3.6/bun-windows-x64.zip",
+      "checksum": "7356F20F646D7047BEE9EB7A3D5344019BEDCE778BFAB3CCCD5DD1EE2DF6177F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.28.0/pnpm-linux-arm64",
+      "checksum": "5BF35F1927D5EA0AA76408504F834E3089679D9E18342AB19502A28FB0116391",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.28.0/pnpm-linux-x64",
+      "checksum": "348E863D17A62411A65F900E8D91395ACABAE9E9237653CCC3C36CB385965F28",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.28.0/pnpm-macos-arm64",
+      "checksum": "B6CFEE40FCB09E68A874FFBF300EB1EF9DEC11302FD03637A4BC605F3F9405CB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.28.0/pnpm-macos-x64",
+      "checksum": "99431E91D721169C2050D5E46ABEFC6F0D23C49E635A5964DCB573D9FE89975A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/pnpm/pnpm/v10.28.0/pnpm-win-x64.exe",
+      "checksum": "DAED0979C3754CDC2E467CA6A298D48FEDBC0FAD92F14F4396F44A0A3DD2B730",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2026-01-19/rust-analyzer-aarch64-apple-darwin.gz",
+      "checksum": "2E0195197408EBCB974717358307A899079652DFA66BF07241DAE18F069E12A4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2026-01-19/rust-analyzer-aarch64-pc-windows-msvc.zip",
+      "checksum": "B1791E41D993E7BF56EDD8115814B7E3A037DA270551D962FA9CAF12B8421716",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2026-01-19/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+      "checksum": "3DA8C4E7563144DD7E528F5B6CB57B87705F4249B38AC455AD585A01C49015EB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2026-01-19/rust-analyzer-x86_64-apple-darwin.gz",
+      "checksum": "88C7490F671618DA78C612108ECC24756E43F830472A73F5623F19E6D25BE00E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2026-01-19/rust-analyzer-x86_64-pc-windows-msvc.zip",
+      "checksum": "2401CADA104BE667377685120D33DB0FB6858A6AC1E9D7D65E9C8D51ADBD065C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2026-01-19/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+      "checksum": "5E8D55408C2BD395E28950AB181AA0CC70B9AFF000E70259BE31789A86150FBE",
       "algorithm": "sha256"
     },
     {
@@ -513,6 +703,66 @@
     {
       "id": "http/awscli.amazonaws.com/awscli-exe-linux-x86_64-2.33.5.zip",
       "checksum": "A1F6A25F1CADEB16A155519A09ABD1784DDFBC58E9FFE4904E83D77FC2C6DAA4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.6.darwin-amd64.tar.gz",
+      "checksum": "E2B5B237F5C262931B8E280AC4B8363F156E19BFAD5270C099998932819670B7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.6.darwin-arm64.tar.gz",
+      "checksum": "984521AE978A5377C7D782FD2DD953291840D7D3D0BD95781A1F32F16D94A006",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.6.linux-amd64.tar.gz",
+      "checksum": "F022B6AAD78E362BCBA9B0B94D09AD58C5A70C6BA3B7582905FABABF5FE0181A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.6.linux-arm64.tar.gz",
+      "checksum": "738EF87D79C34272424CCDF83302B7B0300B8B096ED443896089306117943DD5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.6.windows-amd64.zip",
+      "checksum": "19B4733B727BA5C611B5656187F3AC367D278D64C3D4199A845E39C0FDAC5335",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/golang.org/dl/go1.25.6.windows-arm64.zip",
+      "checksum": "8F2D8E6DD0849A2EC0ADE1683BCFB7809E64D264A4273D8437841000A28FFB60",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/aarch64-apple-darwin/rustup-init",
+      "checksum": "20EF5516C31B1AC2290084199BA77DBBCAA1406C45C1D978CA68558EF5964EF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/aarch64-pc-windows-msvc/rustup-init.exe",
+      "checksum": "DE9F7D29CCD39EFA59A3DDA3EC363B396E09B92681229B9B8F6AAA4C84285E9C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/aarch64-unknown-linux-gnu/rustup-init",
+      "checksum": "E3853C5A252FCA15252D07CB23A1BDD9377A8C6F3EFA01531109281AE47F841C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/x86_64-apple-darwin/rustup-init",
+      "checksum": "9C331076F62B4D0EDEAE63D9D1C9442D5FE39B37B05025EC8D41C5ED35486496",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/x86_64-pc-windows-msvc/rustup-init.exe",
+      "checksum": "88D8258DCF6AE4F7A80C7D1088E1F36FA7025A1CFD1343731B4EE6F385121FC0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/x86_64-unknown-linux-gnu/rustup-init",
+      "checksum": "20A06E644B0D9BD2FBDBFD52D42540BDDE820EA7DF86E92E533C073DA0CDD43C",
       "algorithm": "sha256"
     },
     {

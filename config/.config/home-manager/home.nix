@@ -116,7 +116,4 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-  # git-delta configuration
-  programs.git.delta.enable = true;
 }
