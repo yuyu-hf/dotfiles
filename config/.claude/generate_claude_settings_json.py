@@ -267,14 +267,13 @@ def generate_settings_for_macos():
 def main():
     os_type = platform.system()
 
-    match os_type:
-        case "Darwin":
-            settings = generate_settings_for_macos()
-        case "Linux":
-            settings = generate_settings_for_linux()
-        case _:
-            print(f"Error: Unsupported OS type: {os_type}")
-            return 1
+    if os_type == "Darwin":
+        settings = generate_settings_for_macos()
+    elif os_type == "Linux":
+        settings = generate_settings_for_linux()
+    else:
+        print(f"Error: Unsupported OS type: {os_type}")
+        return 1
 
     script_dir = Path(__file__).parent
     output_path = script_dir / "settings.json"
