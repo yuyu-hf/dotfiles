@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # pylint: disable=missing-module-docstring,missing-function-docstring
 
-import sys
 import json
 import platform
+import sys
 from pathlib import Path
 
 
@@ -16,28 +16,23 @@ def generate_settings(deny_rules_for_os):
         # Step 2. cd dev # path/to/project/dev
         # Step 3. pwd    # path/to/project
         "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
-
         # 全ての非必須な外部通信を禁止する設定です。
         # デフォルトでは、Bedrock または Vertex を使用する場合、すべての非必須トラフィック（エラーレポート、テレメトリ、バグレポート機能を含む）を無効にします。
         # Ref: https://code.claude.com/docs/ja/data-usage
         "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
-
         # 0: システムにインストールされた ripgrep を使用します。（デフォルト）
         # 1: Claude Code に組み込まれた ripgrep を使用します
-        "USE_BUILTIN_RIPGREP": "1"
+        "USE_BUILTIN_RIPGREP": "1",
     }
 
     enabled_plugins = {
         "code-simplifier@claude-plugins-official": True,
     }
 
-    additional_directories = [
-        "~/src"
-    ]
+    additional_directories = ["~/src"]
 
     allow_rules = [
         ("domain:*", ["WebFetch"]),
-
         ("awk:*", ["Bash"]),
         ("cat:*", ["Bash"]),
         ("cd:*", ["Bash"]),
@@ -67,32 +62,26 @@ def generate_settings(deny_rules_for_os):
         ("touch:*", ["Bash"]),
         ("wc:*", ["Bash"]),
         ("whoami:*", ["Bash"]),
-
         ("rg:*", ["Bash"]),
-
         # dev
         ("docker:*", ["Bash"]),
         ("gh:*", ["Bash"]),
-
         # Go
         ("go:*", ["Bash"]),
         ("gofmt:*", ["Bash"]),
         ("golint:*", ["Bash"]),
         ("golangci-lint:*", ["Bash"]),
-
         # Python
         ("python:*", ["Bash"]),
         ("python3:*", ["Bash"]),
         ("pip:*", ["Bash"]),
         ("uv:*", ["Bash"]),
-
         # Rust
         ("cargo:*", ["Bash"]),
         ("rustc:*", ["Bash"]),
         ("rustup:*", ["Bash"]),
         ("rustfmt:*", ["Bash"]),
         ("clippy:*", ["Bash"]),
-
         # JavaScript / TypeScript
         ("npm:*", ["Bash"]),
         ("yarn:*", ["Bash"]),
@@ -110,10 +99,8 @@ def generate_settings(deny_rules_for_os):
         ("jest:*", ["Bash"]),
         ("webpack:*", ["Bash"]),
         ("vite:*", ["Bash"]),
-
         ("/usr/bin/**", ["Read"]),
         ("/usr/local/bin/**", ["Read"]),
-
         ("~/src/**", ["Read", "Edit", "Write"]),
     ]
 
@@ -123,7 +110,6 @@ def generate_settings(deny_rules_for_os):
         ("rsync:*", ["Bash"]),
         ("ssh:*", ["Bash"]),
         ("scp:*", ["Bash"]),
-
         # dev
         ("aws:*", ["Bash"]),
         ("gcloud:*", ["Bash"]),
@@ -131,7 +117,6 @@ def generate_settings(deny_rules_for_os):
         ("vercel:*", ["Bash"]),
         ("kubectl:*", ["Bash"]),
         ("terraform:*", ["Bash"]),
-
         # DB
         ("mysql:*", ["Bash"]),
         ("psql:*", ["Bash"]),
@@ -159,10 +144,8 @@ def generate_settings(deny_rules_for_os):
         ("git rebase:*", ["Bash"]),
         ("git push --force:*", ["Bash"]),
         ("git push -f:*", ["Bash"]),
-
         # Rust
         ("cargo publish*", ["Bash"]),
-
         # JavaScript / TypeScript
         ("npm publish*", ["Bash"]),
         ("yarn publish*", ["Bash"]),
@@ -173,17 +156,14 @@ def generate_settings(deny_rules_for_os):
         ("pnpx:*", ["Bash"]),
         (".next/**", ["Edit", "Write"]),
         ("node_modules/**", ["Edit", "Write"]),
-
         # Python
         ("__pycache__/**", ["Edit", "Write"]),
-
         # readonly
         (".git/**", ["Edit", "Write"]),
         ("dist/**", ["Edit", "Write"]),
         ("build/**", ["Edit", "Write"]),
         ("vendor/**", ["Edit", "Write"]),
         ("target/**", ["Edit", "Write"]),
-
         # secret
         ("~/.ssh/**", ["Read", "Edit", "Write"]),
         ("**/secrets/**", ["Read", "Edit", "Write"]),
@@ -217,7 +197,29 @@ def generate_settings(deny_rules_for_os):
             "allow": convert_rules_to_formatted_list(allow_rules),
             "ask": convert_rules_to_formatted_list(ask_rules),
             "deny": convert_rules_to_formatted_list(deny_rules + deny_rules_for_os),
-        }
+        },
+        "enabledPlugins": {
+            "context7@claude-plugins-official": True,  # 訓練データに含まれない最新のドキュメントを参照するPlugin
+            "feature-dev@claude-plugins-official": True,
+            "superpowers@claude-plugins-official": True,
+            "code-simplifier@claude-plugins-official": True,  # マルチエージェントでコードレビューするPlugin
+            "code-review@claude-plugins-official": True,
+            "pr-review-toolkit@claude-plugins-official": True,
+            "commit-commands@claude-plugins-official": True,
+            "security-guidance@claude-plugins-official": True,
+            "plugin-dev@claude-plugins-official": True,
+            # Go
+            "gopls-lsp@claude-plugins-official": True,
+            # Frontend(JavaScript/TypeScript)
+            "typescript-lsp@claude-plugins-official": True,
+            "playwright@claude-plugins-official": True,
+            "frontend-design@claude-plugins-official": True,
+            "figma@claude-plugins-official": True,
+            # Python
+            "pyright-lsp@claude-plugins-official": True,
+            # Lua
+            "lua-lsp@claude-plugins-official": True,
+        },
     }
 
     return settings
