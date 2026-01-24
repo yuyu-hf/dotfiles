@@ -35,6 +35,9 @@
 
     # Source Code
     pkgs.git
+
+    # Python
+    pkgs.pyright
  
     # DB/Cache
     pkgs.postgresql_16
