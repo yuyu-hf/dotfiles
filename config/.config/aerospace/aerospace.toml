@@ -63,6 +63,7 @@ automatically-unhide-macos-hidden-apps = false
   alt-a = 'workspace a' # Android Studio
   alt-c = 'workspace c' # Chrome
   alt-d = 'workspace d' # Discord
+  alt-g = 'workspace g' # ChatGPT
   alt-o = 'workspace o' # Obsidian
   alt-r = 'workspace r' # Cursor
   alt-s = 'workspace s' # Slack
@@ -91,6 +92,10 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'com.hnc.Discord'
   run = 'move-node-to-workspace d'
+
+[[on-window-detected]]
+  if.app-id = 'com.openai.chat'
+  run = 'move-node-to-workspace g'
 
 [[on-window-detected]]
   if.app-id = 'md.obsidian'
