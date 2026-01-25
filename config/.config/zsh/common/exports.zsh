@@ -12,10 +12,10 @@ if [ -d '/opt/homebrew/bin' ]; then
 fi
 
 # nix
-export PATH="$HOME/.nix-profile/bin:$PATH"
+export PATH="${HOME}/.nix-profile/bin:${PATH}"
 
 # aqua
-export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME}/aquaproj-aqua}/bin:$PATH"
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME}/aquaproj-aqua}/bin:${PATH}"
 export AQUA_GLOBAL_CONFIG="${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME}/aquaproj-aqua/aqua.yaml"
 
 # starship
@@ -23,4 +23,7 @@ export STARSHIP_CONFIG="${XDG_CONFIG_HOME}/starship/.starship.toml"
 
 # dotfiles
 export DOTFILES_DIR="$(ghq root)/github.com/yuyu-hf/dotfiles"
-export PATH="${DOTFILES_DIR}/node_modules/.bin":$PATH
+export PATH="${DOTFILES_DIR}/node_modules/.bin:${PATH}"
+
+# Rust
+export PATH="${HOME}/.cargo/bin:${PATH}"
