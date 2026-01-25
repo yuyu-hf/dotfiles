@@ -48,6 +48,7 @@ automatically-unhide-macos-hidden-apps = false
 
   alt-f = 'fullscreen'
 
+  # 1-9 for Terminal
   alt-1 = 'workspace 1'
   alt-2 = 'workspace 2'
   alt-3 = 'workspace 3'
@@ -59,6 +60,16 @@ automatically-unhide-macos-hidden-apps = false
   alt-9 = 'workspace 9'
   alt-0 = 'balance-sizes'
 
+  alt-a = 'workspace a' # Android Studio
+  alt-c = 'workspace c' # Chrome
+  alt-d = 'workspace d' # Discord
+  alt-o = 'workspace o' # Obsidian
+  alt-r = 'workspace r' # Cursor
+  alt-s = 'workspace s' # Slack
+  alt-v = 'workspace v' # VSCode
+  alt-x = 'workspace x' # Xcode
+  alt-z = 'workspace z' # Other
+
   alt-shift-1 = 'move-node-to-workspace 1'
   alt-shift-2 = 'move-node-to-workspace 2'
   alt-shift-3 = 'move-node-to-workspace 3'
@@ -69,15 +80,34 @@ automatically-unhide-macos-hidden-apps = false
   alt-shift-8 = 'move-node-to-workspace 8'
   alt-shift-9 = 'move-node-to-workspace 9'
 
-  alt-s = 'mode service'
+[[on-window-detected]]
+  if.app-id = 'com.google.android.studio'
+  run = 'move-node-to-workspace a'
 
-[mode.service.binding]
-    esc = ['reload-config', 'mode main']
-    r = ['flatten-workspace-tree', 'mode main'] 
-    f = ['layout floating tiling', 'mode main']
-    backspace = ['close-all-windows-but-current', 'mode main']
+[[on-window-detected]]
+  if.app-id = 'com.google.Chrome'
+  run = 'move-node-to-workspace c'
 
-    alt-h = ['join-with left', 'mode main']
-    alt-j = ['join-with down', 'mode main']
-    alt-k = ['join-with up', 'mode main']
-    alt-l = ['join-with right', 'mode main']
+[[on-window-detected]]
+  if.app-id = 'com.hnc.Discord'
+  run = 'move-node-to-workspace d'
+
+[[on-window-detected]]
+  if.app-id = 'md.obsidian'
+  run = 'move-node-to-workspace o'
+
+[[on-window-detected]]
+  if.app-id = 'com.tinyspeck.slackmacgap'
+  run = 'move-node-to-workspace s'
+
+[[on-window-detected]]
+  if.app-id = 'com.todesktop.230313mzl4w4u92'
+  run = 'move-node-to-workspace r'
+
+[[on-window-detected]]
+  if.app-id = 'com.microsoft.VSCode'
+  run = 'move-node-to-workspace v'
+
+[[on-window-detected]]
+  if.app-id = 'com.apple.dt.Xcode'
+  run = 'move-node-to-workspace x'
