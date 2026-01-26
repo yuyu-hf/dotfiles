@@ -471,6 +471,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/openai/codex/rust-v0.91.0/codex-aarch64-apple-darwin.zst",
+      "checksum": "33403097AFD8AF7FF4CF6A5E10E533D6C0C09185D059A3B017DE030B481DBE7D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/openai/codex/rust-v0.91.0/codex-aarch64-unknown-linux-musl.zst",
+      "checksum": "30322D37A0D465DE38164DE48018461D12F8F424277467EA6219521E8A9DE343",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/openai/codex/rust-v0.91.0/codex-x86_64-apple-darwin.zst",
+      "checksum": "7F6E09A0B676EB4B26EA16F1859C00ACF276DD9182D16A0129D9425C45F3924E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/openai/codex/rust-v0.91.0/codex-x86_64-pc-windows-msvc.exe.zst",
+      "checksum": "F2F7BFCE6CCFAE5937E76540E48F15D3267B5747EF5E440DD1D60FD786B68E00",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/openai/codex/rust-v0.91.0/codex-x86_64-unknown-linux-musl.zst",
+      "checksum": "129B8B693EDEBBD70245C2241ACDEE88BDE5B340B874EF2C85DD29744070DC46",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/oven-sh/bun/bun-v1.3.6/bun-darwin-aarch64.zip",
       "checksum": "2AF1EC8437759AB05B3B0EA421FE9E22E6C705CB4CB0751C326982642DACE8FA",
       "algorithm": "sha256"
@@ -858,6 +883,26 @@
     {
       "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.17/linux-x64-musl/claude",
       "checksum": "23A1D11CE47A1C6874D363B92143BCDA8A32EB20DAD83A022EC554AE3AAB414D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.19/darwin-arm64/claude",
+      "checksum": "D386AC8F6D1479F85D31F369421C824135C10249C32087017D05A5F428852C41",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.19/darwin-x64/claude",
+      "checksum": "BE266B3A952F483D8358AD141E2AFE661170386506F479EAD992319E4FDC38AC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.19/linux-arm64-musl/claude",
+      "checksum": "011942329E90EE0C962528CA6411ABFED546ECE9A305CD6757D1FFB61F3BA2D5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.19/linux-x64-musl/claude",
+      "checksum": "06EB2412E796D4ED0B8C82E898893A5D49FC1633F1EBC06DAA79C28E72837984",
       "algorithm": "sha256"
     },
     {
