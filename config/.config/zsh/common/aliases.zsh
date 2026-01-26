@@ -22,3 +22,6 @@ alias y='yazi'
 # https://github.com/ajeetdsouza/zoxide
 alias cd='z'
 alias cdi='zi'
+
+alias c='claude'
+alias x='codex'
