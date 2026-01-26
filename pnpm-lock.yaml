@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@playwright/mcp':
-        specifier: 0.0.56
-        version: 0.0.56
+        specifier: 0.0.59
+        version: 0.0.59
       '@prisma/language-server':
         specifier: 31.4.0
         version: 31.4.0
@@ -29,8 +29,8 @@ importers:
 
 packages:
 
-  '@playwright/mcp@0.0.56':
-    resolution: {integrity: sha512-hNQUF8uHgNOhklqTyRcjtZ0yVAgEkUhCuvS0Iv65ddveHrD7U2NIZ0bgZJ8F6GeXzNr4oPhjvvpBvW0QSHC7HQ==}
+  '@playwright/mcp@0.0.59':
+    resolution: {integrity: sha512-YL56Vx6AVVSrVG3LZnQo3SLUJmi2Dz2vVzjpd4LYeaCNS5gQvPJ1PTtE2jLKSegOGEXMjPlHQ6NxWvtV15jFJw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -148,6 +148,9 @@ packages:
     resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
 
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
   node-fetch-native@1.6.7:
     resolution: {integrity: sha512-g9yhqoedzIUm0nTnTqAQvueMPVOuIY16bqgAJJC8XOOubYFNwz6IER9qs0Gq2Xd0+CecCKFjtdDTMA4u4xG06Q==}
 
@@ -168,13 +171,13 @@ packages:
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
 
-  playwright-core@1.58.0-alpha-2026-01-16:
-    resolution: {integrity: sha512-r3XM/xwmyoKLgHI8+ooCoKaRv8mch39UoHyLfWSols6GB2H9Lx3JhvhzRep+rYBYk+GDj0222GKuwg1PnVF8zA==}
+  playwright-core@1.59.0-alpha-1769364499000:
+    resolution: {integrity: sha512-rztGMf7lfwzVReQrmSXxYhGB3Lnn0b7+YS0O2eR1xnu/KGIJmzy+0ikWO94DbTmG5NtyQNDWhgXbW72VWhc1vg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.58.0-alpha-2026-01-16:
-    resolution: {integrity: sha512-Ix0VALX+fNrXICSNnrfsvTMch0LA3WdVY8q71ReQzQ+UF0lCK9YbtRwBz65BJLBsWE1j38vBLR+YYE93MezYZA==}
+  playwright@1.59.0-alpha-1769364499000:
+    resolution: {integrity: sha512-b2VEOW/15RnMinGu2Pya3IZIqvhvXv0umx8e+CSpmPeDgA5++MZUNP3glxD+KmeRXY7d8xCktL12P4DTr0PgHA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -242,10 +245,11 @@ packages:
 
 snapshots:
 
-  '@playwright/mcp@0.0.56':
+  '@playwright/mcp@0.0.59':
     dependencies:
-      playwright: 1.58.0-alpha-2026-01-16
-      playwright-core: 1.58.0-alpha-2026-01-16
+      minimist: 1.2.8
+      playwright: 1.59.0-alpha-1769364499000
+      playwright-core: 1.59.0-alpha-1769364499000
 
   '@prisma/config@7.3.0':
     dependencies:
@@ -367,6 +371,8 @@ snapshots:
 
   klona@2.0.6: {}
 
+  minimist@1.2.8: {}
+
   node-fetch-native@1.6.7: {}
 
   nypm@0.6.4:
@@ -387,11 +393,11 @@ snapshots:
       exsolve: 1.0.8
       pathe: 2.0.3
 
-  playwright-core@1.58.0-alpha-2026-01-16: {}
+  playwright-core@1.59.0-alpha-1769364499000: {}
 
-  playwright@1.58.0-alpha-2026-01-16:
+  playwright@1.59.0-alpha-1769364499000:
     dependencies:
-      playwright-core: 1.58.0-alpha-2026-01-16
+      playwright-core: 1.59.0-alpha-1769364499000
     optionalDependencies:
       fsevents: 2.3.2
 
