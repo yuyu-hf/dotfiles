@@ -14,6 +14,7 @@
       "chatgpt"
       "claude"
       "cursor"
+      "obsidian"
     ];
   };
 
