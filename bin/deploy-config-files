@@ -53,8 +53,5 @@ fi
 ./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
 ./bin/ln-s-x config/tmux "${HOME}/.config/tmux"
 
-# cluade
-./bin/ln-s-x config/.claude "${HOME}/.claude"
-
 # Generate Claude settings.json
 config/.claude/generate_claude_settings_json.py
