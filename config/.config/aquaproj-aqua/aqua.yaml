@@ -43,7 +43,7 @@ packages:
   - name: aws/aws-cli@2.33.5
   - name: stripe/stripe-cli@v1.34.0
   # AI
-  - name: anthropics/claude-code@v2.1.22
+  - name: anthropics/claude-code@v2.1.23
   - name: openai/codex@rust-v0.92.0
   # tool
   - name: jqlang/jq@jq-1.8.1
@@ -55,5 +55,5 @@ packages:
   - name: eza-community/eza@v0.23.4
   - name: sharkdp/fd@v10.3.0
   - name: tree-sitter/tree-sitter@v0.26.3
-  - name: anthropics/claude-code@v2.1.22
+  - name: anthropics/claude-code@v2.1.23
   - name: openai/codex@rust-v0.92.0
