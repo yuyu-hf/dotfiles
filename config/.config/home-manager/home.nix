@@ -50,6 +50,7 @@
 
     # Container
     pkgs.docker
+    pkgs.colima
 
     # Cloud Service
     pkgs.azure-cli
