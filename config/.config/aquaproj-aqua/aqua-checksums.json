@@ -996,6 +996,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-arm64/claude",
+      "checksum": "1023C0334B0BF99CE7A466ADBDB24ED0CAE0CE4E1138837238E132B3886DD789",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-x64/claude",
+      "checksum": "13FC5F92B6FEC84B674AC7CF506524323F012CF999740733F7377F6FB46BCFD7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-arm64-musl/claude",
+      "checksum": "A6AEE1F2D6E5010432A589FC52772E44186099E3D1FD94419B1689FF860935DE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-x64-musl/claude",
+      "checksum": "BD51F99DCA3BA650CE74D9A491D6FAE06DA7F48E426D2948B0AED274EB34B141",
+      "algorithm": "sha256"
+    },
+    {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.462.0/registry.yaml",
       "checksum": "2AFA03BCE0987832DE93266E53C03E41B4B5D00EF3455B3537015E52642D7F704A31C9DEB27139C0A9B501AC55C8D4A2572506020B887C2DFBCEDF3723300F00",
       "algorithm": "sha512"
