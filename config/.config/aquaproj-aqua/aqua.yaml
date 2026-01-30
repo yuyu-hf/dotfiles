@@ -47,7 +47,6 @@ packages:
   - name: openai/codex@rust-v0.92.0
   # Test
   - name: k1LoW/runn@v1.3.0
-  - name: scenarigo/scenarigo@v0.24.1
   # tool
   - name: jqlang/jq@jq-1.8.1
   - name: ajeetdsouza/zoxide@v0.9.8
