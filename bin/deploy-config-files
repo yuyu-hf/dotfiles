@@ -6,8 +6,6 @@ set -euo pipefail
 
 cd $(dirname $0)/..
 
-./bin/ln-s-x config/.bin "${HOME}/.bin"
-
 if [ ! -e "${HOME}/.config" ]; then
     mkdir -p "${HOME}/.config"
 fi
@@ -50,8 +48,5 @@ fi
 
 # tmux
 ./bin/ln-s-x config/tmux/.tmux.conf "${HOME}/.tmux.conf"
-./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
+# ./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
 ./bin/ln-s-x config/tmux "${HOME}/.config/tmux"
-
-# Generate Claude settings.json
-config/.claude/generate_claude_settings_json.py
