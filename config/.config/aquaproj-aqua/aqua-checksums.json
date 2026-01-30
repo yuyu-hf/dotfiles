@@ -421,6 +421,21 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/k1LoW/runn/v1.3.0/runn_v1.3.0_darwin_amd64.zip",
+      "checksum": "316C2FEEF9476E34E3015A6EC75997731C17DF4632EAB47986B09B78FFE5CC77",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/k1LoW/runn/v1.3.0/runn_v1.3.0_darwin_arm64.zip",
+      "checksum": "B066B09F15F0DCDD3F3FF22BD786FBACAB65A916097D0043F95555287F652550",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/k1LoW/runn/v1.3.0/runn_v1.3.0_linux_amd64.tar.gz",
+      "checksum": "729509D04DB656B83338E162F0836ED4B257D918FC330B3D9C4D307E914FF619",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/v0.11.5/nvim-linux-arm64.tar.gz",
       "checksum": "EA4F9A31B11CC1477FF014AEBB7B207684E7280F94FFA97ABDAB6CACD9B98519",
       "algorithm": "sha256"
