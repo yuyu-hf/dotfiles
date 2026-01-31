@@ -39,9 +39,6 @@ packages:
   # Cloud Service
   - name: aws/aws-cli@2.33.5
   - name: stripe/stripe-cli@v1.34.0
-  # AI
-  - name: anthropics/claude-code@v2.1.27
-  - name: openai/codex@rust-v0.92.0
   # Test
   - name: k1LoW/runn@v1.3.0
   # tool
