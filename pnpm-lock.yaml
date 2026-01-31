@@ -17,6 +17,9 @@ importers:
       '@tailwindcss/language-server':
         specifier: 0.14.29
         version: 0.14.29
+      ccusage:
+        specifier: ^18.0.5
+        version: 18.0.5
       chrome-devtools-mcp:
         specifier: 0.13.0
         version: 0.13.0
@@ -66,6 +69,11 @@ packages:
     peerDependenciesMeta:
       magicast:
         optional: true
+
+  ccusage@18.0.5:
+    resolution: {integrity: sha512-bnZrVbGm5h7hIIOH3FZFaDxKgJLLHhWDWIv7/9M6/O373YM6RAwsG9hxZXA1ep+C2ISiNEX6MYVoXgkoSuFf9Q==}
+    engines: {node: '>=20.19.4'}
+    hasBin: true
 
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
@@ -301,6 +309,8 @@ snapshots:
       perfect-debounce: 1.0.0
       pkg-types: 2.3.0
       rc9: 2.1.2
+
+  ccusage@18.0.5: {}
 
   chokidar@4.0.3:
     dependencies:
