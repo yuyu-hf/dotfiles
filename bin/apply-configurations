@@ -4,4 +4,19 @@ set -euo pipefail
 
 cd $(dirname $0)/../config/.config/home-manager
 
-sudo nix run nix-darwin -- switch --flake .
+# ホスト名からflake設定名を決定
+HOSTNAME=$(hostname -s)
+case "$HOSTNAME" in
+  "Hiragas-MacBook-Pro")
+    FLAKE_CONFIG="private-m1-macbookpro"
+    ;;
+  "Yurias-Mac-mini")
+    FLAKE_CONFIG="private-m4-macmini"
+    ;;
+  *)
+    echo "Unknown hostname: $HOSTNAME"
+    exit 1
+    ;;
+esac
+
+sudo nix run nix-darwin -- switch --flake ".#${FLAKE_CONFIG}"

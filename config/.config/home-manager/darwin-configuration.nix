@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, isMacMini ? false, username, ... }:
 
 {
   system.stateVersion = 6;
 
-  system.primaryUser = "hiragayuria";
+  system.primaryUser = username;
 
   homebrew = {
     enable = true;
