@@ -1,3 +1,9 @@
+# zsh
+config/.config/zsh/local/*
+
+# Nix
+config/.config/home-manager/result
+
 # karabiner
 config/.config/karabiner/*
 !config/.config/karabiner/karabiner.json
