@@ -94,3 +94,7 @@ http-client.private.env.json
 
 # Zsh completion cache
 .zcompdump
+
+node_modules/
+
+tmp/
