@@ -15,6 +15,8 @@
       "claude"
       "cursor"
       "obsidian"
+      "ghostty"
+      "wezterm"
     ];
   };
 
