@@ -8,7 +8,7 @@ bindkey -e # Enable emacs keybindings
 # zsh/fzf.zshで定義した関数を"Ctrl-r"で呼び出せるようにしています。
 # Emacsのkeybindingsでも"Ctrl-r"を利用しているので、"bindkey -e"の設定を上書きするように"bindkey -e"の後にzshの設定を反映させてください。
 source "${HOME}/.config/zsh/common/init.zsh"
-source "${HOME}/.config/zsh/local/init.zsh"
+[[ -f "${HOME}/.config/zsh/local/init.zsh" ]] && source "${HOME}/.config/zsh/local/init.zsh"
 
 HISTFILE="${XDG_STATE_HOME}/.zsh_history" # 履歴を保存するファイルパス
 HISTSIZE=1000                             # メモリ上に保存する履歴の行数
