@@ -4,3 +4,8 @@ windows:
   - main:
       panes:
           - cd $(ghq root)/github.com/yuyu-hf/tmuxcc/tui && node ./dist/index.js
+  - tmuxcc-dev:
+      layout: even-horizontal
+      panes:
+          - cd $(ghq root)/github.com/yuyu-hf/tmuxcc && docker compose up
+          - cd $(ghq root)/github.com/yuyu-hf/tmuxcc/api && npm run dev
