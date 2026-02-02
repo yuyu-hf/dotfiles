@@ -48,5 +48,5 @@ fi
 
 # tmux
 ./bin/ln-s-x config/tmux/.tmux.conf "${HOME}/.tmux.conf"
-# ./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
+./bin/ln-s-x config/tmux/.tmuxinator "${HOME}/.tmuxinator"
 ./bin/ln-s-x config/tmux "${HOME}/.config/tmux"

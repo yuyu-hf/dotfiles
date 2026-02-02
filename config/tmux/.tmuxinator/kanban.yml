@@ -1,0 +1,6 @@
+name: kanban
+
+windows:
+  - main:
+      panes:
+          - cd $(ghq root)/github.com/yuyu-hf/tmuxcc/tui && node ./dist/index.js
