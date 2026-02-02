@@ -7,5 +7,5 @@ windows:
   - tmuxcc-dev:
       layout: even-horizontal
       panes:
+          - cd $(ghq root)/github.com/yuyu-hf/tmuxcc && tmuxcc start
           - cd $(ghq root)/github.com/yuyu-hf/tmuxcc && docker compose up
-          - cd $(ghq root)/github.com/yuyu-hf/tmuxcc/api && npm run dev
