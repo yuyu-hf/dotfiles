@@ -25,3 +25,7 @@ alias cdi='zi'
 
 alias c='claude'
 alias x='codex'
+
+# tmuxcc
+alias tmuxcc='node $(ghq root)/github.com/yuyu-hf/tmuxcc/dist/index.js'
+alias tmuxcc-tui='node $(ghq root)/github.com/yuyu-hf/tmuxcc/tui/dist/index.js'
