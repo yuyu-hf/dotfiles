@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.28.0",
   "devDependencies": {
+    "@google/gemini-cli": "^0.26.0",
     "@openai/codex": "0.94.0",
     "@playwright/mcp": "0.0.59",
     "@prisma/language-server": "31.4.0",
