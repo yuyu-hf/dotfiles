@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@openai/codex':
-        specifier: ^0.93.0
-        version: 0.93.0
+        specifier: 0.94.0
+        version: 0.94.0
       '@playwright/mcp':
         specifier: 0.0.59
         version: 0.0.59
@@ -35,8 +35,8 @@ importers:
 
 packages:
 
-  '@openai/codex@0.93.0':
-    resolution: {integrity: sha512-3skVlzRN3bApbyCX3zeEK6umGb4OfaTa/lsuJ9syng+NxUGptDMFsrOoC+rMU1uYeFtt+OjYttjpfHY2xE1DAQ==}
+  '@openai/codex@0.94.0':
+    resolution: {integrity: sha512-GKOU2ty3NXls2aeiFSCnSSB6zQBtENqC5OnPa8s79Z576YP1r2DIfUrhQZzVDKmFei852E1SG4TNljFL/081gg==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -261,7 +261,7 @@ packages:
 
 snapshots:
 
-  '@openai/codex@0.93.0': {}
+  '@openai/codex@0.94.0': {}
 
   '@playwright/mcp@0.0.59':
     dependencies:
