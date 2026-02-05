@@ -12,8 +12,8 @@ importers:
         specifier: ^0.26.0
         version: 0.26.0(@grpc/grpc-js@1.14.3)(@opentelemetry/core@2.5.0(@opentelemetry/api@1.9.0))(@opentelemetry/resources@2.5.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-metrics@2.0.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.0.1(@opentelemetry/api@1.9.0))(express@5.2.1)(hono@4.11.7)
       '@openai/codex':
-        specifier: 0.94.0
-        version: 0.94.0
+        specifier: 0.97.0
+        version: 0.97.0
       '@playwright/mcp':
         specifier: 0.0.59
         version: 0.0.59
@@ -250,8 +250,8 @@ packages:
       '@cfworker/json-schema':
         optional: true
 
-  '@openai/codex@0.94.0':
-    resolution: {integrity: sha512-GKOU2ty3NXls2aeiFSCnSSB6zQBtENqC5OnPa8s79Z576YP1r2DIfUrhQZzVDKmFei852E1SG4TNljFL/081gg==}
+  '@openai/codex@0.97.0':
+    resolution: {integrity: sha512-3bG0SFuC5nEQd5CZuIj4qV/6QyAb9mpQPKJKYNAo7NptFNifCI+hcP4a+/zjy+hNndvnvuylkCoj+BWDXq+cIA==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -629,8 +629,8 @@ packages:
   ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
 
-  ansi-escapes@7.2.0:
-    resolution: {integrity: sha512-g6LhBsl+GBPRWGWsBtutpzBYuIIdBkLEvad5C/va/74Db018+5TZiyA26cZJAr3Rft5lprVqOIPxf5Vid6tqAw==}
+  ansi-escapes@7.3.0:
+    resolution: {integrity: sha512-BvU8nYgGQBxcmMuEeUEmNTvrMVjJNSH7RgW24vXexN4Ven6qCvy4TntnvlnwnMLTVlcRQQdbRY8NKnaIoeWDNg==}
     engines: {node: '>=18'}
 
   ansi-regex@5.0.1:
@@ -2773,7 +2773,7 @@ snapshots:
   '@jrichman/ink@6.4.7(react@19.2.4)':
     dependencies:
       '@alcalzone/ansi-tokenize': 0.2.4
-      ansi-escapes: 7.2.0
+      ansi-escapes: 7.3.0
       ansi-styles: 6.2.3
       auto-bind: 5.0.1
       chalk: 5.6.2
@@ -2864,7 +2864,7 @@ snapshots:
       - hono
       - supports-color
 
-  '@openai/codex@0.94.0': {}
+  '@openai/codex@0.97.0': {}
 
   '@opentelemetry/api-logs@0.203.0':
     dependencies:
@@ -3311,7 +3311,7 @@ snapshots:
     dependencies:
       string-width: 4.2.3
 
-  ansi-escapes@7.2.0:
+  ansi-escapes@7.3.0:
     dependencies:
       environment: 1.1.0
 
