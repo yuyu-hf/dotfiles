@@ -12,8 +12,8 @@ importers:
         specifier: ^0.26.0
         version: 0.26.0(@grpc/grpc-js@1.14.3)(@opentelemetry/core@2.5.0(@opentelemetry/api@1.9.0))(@opentelemetry/resources@2.5.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-metrics@2.0.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.0.1(@opentelemetry/api@1.9.0))(express@5.2.1)(hono@4.11.7)
       '@openai/codex':
-        specifier: 0.97.0
-        version: 0.97.0
+        specifier: 0.98.0
+        version: 0.98.0
       '@playwright/mcp':
         specifier: 0.0.59
         version: 0.0.59
@@ -250,8 +250,8 @@ packages:
       '@cfworker/json-schema':
         optional: true
 
-  '@openai/codex@0.97.0':
-    resolution: {integrity: sha512-3bG0SFuC5nEQd5CZuIj4qV/6QyAb9mpQPKJKYNAo7NptFNifCI+hcP4a+/zjy+hNndvnvuylkCoj+BWDXq+cIA==}
+  '@openai/codex@0.98.0':
+    resolution: {integrity: sha512-CKjrhAmzTvWn7Vbsi27iZRKBAJw9a7ZTTkWQDbLgQZP1weGbDIBk1r6wiLEp1ZmDO7w0fHPLYgnVspiOrYgcxg==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -2864,7 +2864,7 @@ snapshots:
       - hono
       - supports-color
 
-  '@openai/codex@0.97.0': {}
+  '@openai/codex@0.98.0': {}
 
   '@opentelemetry/api-logs@0.203.0':
     dependencies:
