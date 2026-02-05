@@ -66,6 +66,7 @@ automatically-unhide-macos-hidden-apps = false
   alt-f = 'workspace f' # Firefox
   alt-g = 'workspace g' # ChatGPT
   alt-o = 'workspace o' # Obsidian
+  alt-p = 'workspace p' # Pencil
   alt-r = 'workspace r' # Cursor
   alt-s = 'workspace s' # Slack
   alt-v = 'workspace v' # VSCode
@@ -104,6 +105,10 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'md.obsidian'
   run = 'move-node-to-workspace o'
+
+[[on-window-detected]]
+  if.app-id = 'dev.pencil.desktop'
+  run = 'move-node-to-workspace p'
 
 [[on-window-detected]]
   if.app-id = 'com.tinyspeck.slackmacgap'
