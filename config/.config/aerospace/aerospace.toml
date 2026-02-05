@@ -61,9 +61,10 @@ automatically-unhide-macos-hidden-apps = false
   alt-0 = 'balance-sizes'
 
   alt-a = 'workspace a' # Android Studio
+  alt-b = 'workspace b' # Firefox
   alt-c = 'workspace c' # Chrome
   alt-d = 'workspace d' # Discord
-  alt-f = 'workspace f' # Firefox
+  alt-f = 'workspace f' # Figma
   alt-g = 'workspace g' # ChatGPT
   alt-o = 'workspace o' # Obsidian
   alt-p = 'workspace p' # Pencil
@@ -87,6 +88,10 @@ automatically-unhide-macos-hidden-apps = false
   run = 'move-node-to-workspace a'
 
 [[on-window-detected]]
+  if.app-id = 'org.mozilla.firefox'
+  run = 'move-node-to-workspace b'
+
+[[on-window-detected]]
   if.app-id = 'com.google.Chrome'
   run = 'move-node-to-workspace c'
 
@@ -95,7 +100,7 @@ automatically-unhide-macos-hidden-apps = false
   run = 'move-node-to-workspace d'
 
 [[on-window-detected]]
-  if.app-id = 'org.mozilla.firefox'
+  if.app-id = 'com.figma.Desktop'
   run = 'move-node-to-workspace f'
 
 [[on-window-detected]]

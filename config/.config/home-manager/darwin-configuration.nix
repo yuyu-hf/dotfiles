@@ -17,6 +17,8 @@
       "obsidian"
       "ghostty"
       "wezterm"
+      "figma"
+      "canva"
     ];
   };
 
