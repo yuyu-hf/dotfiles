@@ -2,7 +2,7 @@
   "name": "@yuyu-hf/dotfiles",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.2",
   "devDependencies": {
     "@google/gemini-cli": "^0.26.0",
     "@openai/codex": "0.97.0",
