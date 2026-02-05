@@ -46,7 +46,7 @@ automatically-unhide-macos-hidden-apps = false
   alt-minus = 'resize smart -50'
   alt-equal = 'resize smart +50'
 
-  alt-f = 'fullscreen'
+  alt-z = 'fullscreen'
 
   # 1-9 for Terminal
   alt-1 = 'workspace 1'
@@ -63,13 +63,13 @@ automatically-unhide-macos-hidden-apps = false
   alt-a = 'workspace a' # Android Studio
   alt-c = 'workspace c' # Chrome
   alt-d = 'workspace d' # Discord
+  alt-f = 'workspace f' # Firefox
   alt-g = 'workspace g' # ChatGPT
   alt-o = 'workspace o' # Obsidian
   alt-r = 'workspace r' # Cursor
   alt-s = 'workspace s' # Slack
   alt-v = 'workspace v' # VSCode
   alt-x = 'workspace x' # Xcode
-  alt-z = 'workspace z' # Other
 
   alt-shift-1 = 'move-node-to-workspace 1'
   alt-shift-2 = 'move-node-to-workspace 2'
@@ -92,6 +92,10 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'com.hnc.Discord'
   run = 'move-node-to-workspace d'
+
+[[on-window-detected]]
+  if.app-id = 'org.mozilla.firefox'
+  run = 'move-node-to-workspace f'
 
 [[on-window-detected]]
   if.app-id = 'com.openai.chat'
