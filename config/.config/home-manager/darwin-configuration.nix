@@ -19,6 +19,7 @@
       "wezterm"
       "figma"
       "canva"
+      "nani"
     ];
   };
 
