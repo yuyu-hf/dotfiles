@@ -20,6 +20,7 @@
       "figma"
       "canva"
       "nani"
+      "clipy"
     ];
   };
 
