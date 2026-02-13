@@ -83,6 +83,10 @@ automatically-unhide-macos-hidden-apps = false
   alt-shift-8 = 'move-node-to-workspace 8'
   alt-shift-9 = 'move-node-to-workspace 9'
 
+  cmd-alt-1 = 'move-workspace-to-monitor 1'
+  cmd-alt-2 = 'move-workspace-to-monitor 2'
+  cmd-alt-3 = 'move-workspace-to-monitor 3'
+
 [[on-window-detected]]
   if.app-id = 'com.google.android.studio'
   run = 'move-node-to-workspace a'
@@ -130,3 +134,8 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.app-id = 'com.apple.dt.Xcode'
   run = 'move-node-to-workspace x'
+
+[workspace-to-monitor-force-assignment]
+1 = 1
+2 = 2
+3 = 3
