@@ -29,7 +29,7 @@ packages:
   # git
   - name: cli/cli@v2.83.2
   - name: dandavison/delta@0.18.2
-  - name: x-motemen/ghq@v1.8.0
+  - name: x-motemen/ghq@v1.9.3
   - name: k1LoW/git-wt@v0.15.0
   - name: jesseduffield/lazygit@v0.58.1
   # neovim
